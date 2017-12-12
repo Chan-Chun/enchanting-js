@@ -4,31 +4,108 @@
 ## Common
 
 ### Concept
-* 
-* Please 
+* Please code `===` instead of  `==` 
+* `;` make the world better,ignore [standardjs](https://standardjs.com/)
+* Fxxx  `var` , strongly recommend `const` && `let`
 
-### Judgement
 
-* -1
+### Less is more
 
-base:
+
+* is -1 ?
+
+Base:
 
 ```javascript
-number === -1
+number === -1;
 ```
 
-enchating:
+Enchating:
 ```javascript
-!~number
+!~number;
 ```
 
-* 
+* rounding
+
+
+
+Base:
+
+```javascript
+Math.round(1.2);
+```
+
+Enchating:
+
+```javascript
+~~1.2;
+```
+
+* default
+
+Base:
+
+```javascript
+object ? object : {};
+```
+
+Enchating:
+
+```javascript
+let array = object || {};
+
+// or
+
+(arg1 = 1, arg2 = 2) => console.log(arg1, arg2);
+```
+
+* too many judgements ?
+
+Base:
+
+```javascript
+let number = 5;
+number === 5 ? doSomething() : false
+```
+
+Enchating:
+
+```javascript
+let number = 5;
+number === 5 || doSomething();
+```
+
+* "true", "false" ?
+
+Base：
+
+```javascript
+let str = 'true';
+return str === 'true';
+```
+
+Enchating:
+
+```Javascript
+let str = 'true';
+return (/^true$/i).test(str); // set to util.js
+```
+
+### Base object
 
 
 
 
 
+## Function
 
+### Concept
+
+* Use arrow function
+
+
+
+## algorithm
 
 
 
