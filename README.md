@@ -93,7 +93,17 @@ return (/^true$/i).test(str); // set to util.js
 
 ### Base object
 
-
+* Basic Type
+  * Null
+  * Undefine
+  * Number
+  * Boolean
+  * String
+  * Symbol
+* Reference Type （ Just in common use ）
+  * Object
+  * Array
+  * Function
 
 
 
