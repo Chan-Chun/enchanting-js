@@ -91,6 +91,24 @@ let str = 'true';
 return (/^true$/i).test(str); // set to util.js
 ```
 
+* "exist" will "plus"
+
+Base:
+
+```javascript
+if (exist) {
+  plus++;
+}
+```
+
+Enchating:
+
+```javascript
+exist && plus++
+```
+
+
+
 ### Base object
 
 * Basic Type
