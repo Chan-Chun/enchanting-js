@@ -4,7 +4,7 @@
 ## Common
 
 ### Concept
-* Please code `===` instead of  `==` 
+* Please code `===` instead of  `==`
 * `;` make the world better,ignore [standardjs](https://standardjs.com/)
 * Fxxx  `var` , strongly recommend `const` && `let`
 
@@ -91,7 +91,7 @@ let str = 'true';
 return (/^true$/i).test(str); // set to util.js
 ```
 
-* "exist" will "plus"
+* "exist" will "plus" or "use"
 
 Base:
 
@@ -105,6 +105,10 @@ Enchating:
 
 ```javascript
 exist && plus++
+
+// or
+
+window.exist && exist.doSomething
 ```
 
 
