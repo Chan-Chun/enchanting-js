@@ -115,9 +115,21 @@ window.exist && exist.doSomething
 
 ### Base object
 
+**In fact, you do not need to consider all, because you can know how many types will appear.**
+
 * Basic Type
   * Null
+
+    `if(obj)`
+
   * Undefine
+
+    `if(x)`
+
+  > Remember, `Null` represents this shouldn't have value，but `undefine` is not. 
+  >
+  > So `Number(null) === 0` , but `Number(undefined)` is `NaN`
+
   * Number
   * Boolean
   * String
