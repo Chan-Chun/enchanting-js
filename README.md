@@ -65,7 +65,7 @@ Base:
 
 ```javascript
 let number = 5;
-number === 5 ? doSomething() : false
+number === 5 ? doSomething() : false;
 ```
 
 Enchating:
@@ -104,11 +104,11 @@ if (exist) {
 Enchating:
 
 ```javascript
-exist && plus++
+exist && plus++;
 
 // or
 
-window.exist && exist.doSomething
+window.exist && exist.doSomething;
 ```
 
 
@@ -135,17 +135,14 @@ window.exist && exist.doSomething
     * isNumber
 
       ```javascript
-      typeof number === 'number'
-
-      // or
-
-      Number.isNaN()
+      typeof number === 'number' && isFinite(number); // isFinite avoids NaN
       ```
+      > Do not use `isNaN` , cause non-numbers will coerced to numeric type.
 
     * Integer
 
       ```javascript
-      Number.isInteger() // ES6
+      Number.isInteger(); // ES6, SO GOOD!
       ```
 
   * Boolean
