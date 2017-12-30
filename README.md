@@ -131,8 +131,27 @@ window.exist && exist.doSomething
   > So `Number(null) === 0` , but `Number(undefined)` is `NaN`
 
   * Number
+
+    * isNumber
+
+      ```javascript
+      typeof number === 'number'
+
+      // or
+
+      Number.isNaN()
+      ```
+
+    * Integer
+
+      ```javascript
+      Number.isInteger() // ES6
+      ```
+
   * Boolean
+
   * String
+
   * Symbol
 * Reference Type （ Just in common use ）
   * Object
