@@ -120,15 +120,21 @@ window.exist && exist.doSomething;
 * Basic Type
   * Null
 
-    `if(obj)`
+    ```javascript
+    if(obj)
+    ```
 
   * Undefine
 
-    `if(x)`
+    ```javascript
+    if(x)
+    ```
 
   > Remember, `Null` represents this shouldn't have value，but `undefine` is not. 
   >
   > So `Number(null) === 0` , but `Number(undefined)` is `NaN`
+
+  > Importantly, if(0) is very dangerous!
 
   * Number
 
@@ -146,6 +152,10 @@ window.exist && exist.doSomething;
       ```
 
   * Boolean
+
+    ```javascript
+    typeof val ==="boolean";
+    ```
 
   * String
 
