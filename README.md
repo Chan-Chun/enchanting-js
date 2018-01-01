@@ -154,16 +154,25 @@ window.exist && exist.doSomething;
   * Boolean
 
     ```javascript
-    typeof val ==="boolean";
+    typeof val === "boolean";
     ```
 
   * String
 
-  * Symbol
+    ```javascript
+    typeof str === "string"; // && str.length > 0 
+    ```
+
+  * Symbol (ES6)
+
 * Reference Type （ Just in common use ）
   * Object
   * Array
   * Function
+
+* Other
+
+  * JSON
 
 
 
