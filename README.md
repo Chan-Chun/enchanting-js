@@ -165,6 +165,10 @@ window.exist && exist.doSomething;
 
   * Symbol (ES6)
 
+    ```javascript
+    typeof s === "symbol"; 
+    ```
+
 * Reference Type （ Just in common use ）
   * Object
   * Array
