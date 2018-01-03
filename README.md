@@ -184,6 +184,10 @@ window.exist && exist.doSomething;
 
   * Function
 
+    ```javascript
+    typeof fun === 'function' && arr instanceof Function
+    ```
+
 * Other
 
   * JSON
