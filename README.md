@@ -190,7 +190,29 @@ window.exist && exist.doSomething;
 
 * Other
 
-  * JSON
+  * JSON-String
+
+    ```javascript
+    function isJSON(str) {
+            if (typeof str == 'string') {
+                try {
+                    var obj=JSON.parse(str);
+                    if(str.indexOf('{')>-1){
+                        return true;
+                    }else{
+                        return false;
+                    }
+
+                } catch(e) {
+                    console.log(e);
+                    return false;
+                }
+            }
+            return false;
+    }
+    ```
+
+    ​
 
 
 
