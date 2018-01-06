@@ -218,6 +218,8 @@ window.exist && exist.doSomething;
 
 ## Function
 
+
+
 ### Concept
 
 * Use arrow function
@@ -234,3 +236,12 @@ window.exist && exist.doSomething;
 
 ## Hack
 
+* intercept
+
+  ```javascript
+
+  ```
+
+  ​
+
+  ​
