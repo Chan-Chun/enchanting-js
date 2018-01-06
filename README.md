@@ -239,7 +239,11 @@ window.exist && exist.doSomething;
 * intercept
 
   ```javascript
-
+  let sendTemp = send;
+  send = function(oldData) {
+    let data = oldDataDoSomething;
+    sendTemp.call(this, data); // make the function belong to this obeject again
+  });
   ```
 
   ​
