@@ -188,6 +188,17 @@ window.exist && exist.doSomething;
     typeof fun === 'function' && arr instanceof Function
     ```
 
+  * All
+
+    ```javascript
+    const is = (type) => (obj) => toString.call(obj) === `[object ${type}]`
+    const isRegExp = is('RegExp')
+    const isString = is('String')
+    const isFunction = is('Function')
+    const isObject = is('Object')
+    const isArray = is('Array')
+    ```
+
 * Other
 
   * JSON-String
@@ -246,6 +257,4 @@ window.exist && exist.doSomething;
   });
   ```
 
-  ​
-
-  ​
+  
