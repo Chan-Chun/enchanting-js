@@ -91,7 +91,7 @@ let str = 'true';
 return (/^true$/i).test(str); // set to util.js
 ```
 
-* "exist" will "plus" or "use"
+* &&
 
 Base:
 
@@ -104,11 +104,31 @@ if (exist) {
 Enchating:
 
 ```javascript
-exist && plus++;
+exist && plus++; // if exist, return plus++
 
 // or
 
 window.exist && exist.doSomething;
+```
+
+* ||
+
+Base:
+
+```javascript
+if (!exist) {
+  plus++;
+}
+```
+
+Enchating:
+
+```javascript
+exist || plus++; //if not exist, return plus++
+
+// or
+
+window.exist || exist.doSomething;
 ```
 
 
