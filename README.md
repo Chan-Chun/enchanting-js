@@ -27,8 +27,6 @@ Enchating:
 
 * rounding
 
-
-
 Base:
 
 ```javascript
@@ -137,7 +135,7 @@ Base:
 
 ```javascript
 if (a > 10) {
-  doSomething()
+  doSomething();
 }
 a++; // a just a counter
 ```
@@ -146,11 +144,9 @@ Enchating:
 
 ```javascript
 if (++a > 0) { // a just a counter
-  doSomething()
+  doSomething();
 }
 ```
-
-
 
 ### Base object
 
@@ -212,30 +208,30 @@ if (++a > 0) { // a just a counter
   * Object
 
     ```javascript
-    typeof obj === 'object' && obj instanceof Object
+    typeof obj === 'object' && obj instanceof Object;
     ```
 
   * Array
 
     ```javascript
-    typeof arr === 'array' && arr instanceof Array
+    typeof arr === 'array' && arr instanceof Array;
     ```
 
   * Function
 
     ```javascript
-    typeof fun === 'function' && arr instanceof Function
+    typeof fun === 'function' && arr instanceof Function;
     ```
 
   * All
 
     ```javascript
-    const is = (type) => (obj) => toString.call(obj) === `[object ${type}]`
-    const isRegExp = is('RegExp')
-    const isString = is('String')
-    const isFunction = is('Function')
-    const isObject = is('Object')
-    const isArray = is('Array')
+    const is = (type) => (obj) => toString.call(obj) === `[object ${type}]`;
+    const isRegExp = is('RegExp');
+    const isString = is('String');
+    const isFunction = is('Function');
+    const isObject = is('Object');
+    const isArray = is('Array');
     ```
 
 * Other
@@ -244,45 +240,30 @@ if (++a > 0) { // a just a counter
 
     ```javascript
     function isJSON(str) {
-            if (typeof str == 'string') {
-                try {
-                    var obj=JSON.parse(str);
-                    if(str.indexOf('{')>-1){
-                        return true;
-                    }else{
-                        return false;
-                    }
-
-                } catch(e) {
-                    console.log(e);
-                    return false;
-                }
-            }
+      if (typeof str == 'string') {
+        try {
+          var obj = JSON.parse(str);
+          if (str.indexOf('{') > -1) {
+            return true;
+          } else {
             return false;
+          }
+        } catch(e) {
+          console.log(e);
+          return false;
+        }
+      }
+      return false;
     }
     ```
 
-    ​
-
-
-
 ## Function
-
-
 
 ### Concept
 
 * Use arrow function
 
-
-
 ## algorithm
-
-
-
-
-
-
 
 ## Hack
 
@@ -296,4 +277,3 @@ if (++a > 0) { // a just a counter
   });
   ```
 
-  
