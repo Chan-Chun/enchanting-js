@@ -131,6 +131,25 @@ exist || plus++; //if not exist, return plus++
 window.exist || exist.doSomething;
 ```
 
+- ++ or --
+
+Base:
+
+```javascript
+if (a > 10) {
+  doSomething()
+}
+a++; // a just a counter
+```
+
+Enchating:
+
+```javascript
+if (++a > 0) { // a just a counter
+  doSomething()
+}
+```
+
 
 
 ### Base object
